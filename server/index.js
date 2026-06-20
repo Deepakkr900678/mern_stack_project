@@ -116,7 +116,7 @@ app.use((err, req, res, next) => {
       message: err.message,
     });
   }
-  next(err); // Pass to other error handlers if needed
+  next(err); 
 });
 
 
