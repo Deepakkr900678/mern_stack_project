@@ -42,7 +42,6 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(cookieParser());
 
-// Define allowed origins in an array
 const allowedOrigins = [
   process.env.CLIENT_URI, // Live development environment
   process.env.DELETION_URI, // Production environment
