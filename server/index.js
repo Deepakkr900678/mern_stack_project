@@ -104,7 +104,7 @@ app.use("/api/v1/deeplink", deeplinkRoutes);
 app.use("/api/v1/contact", contactRoutes);
 
 
-app.get("/", (req, res) => {
+app.get("/health", (req, res) => {
   return res.json({
     success: true,
     message: "Your server is up and running...",
